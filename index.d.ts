@@ -1,6 +1,5 @@
-// Type definitions for react-querybuilder 1.4.2
-// Project: https://github.com/sapientglobalmarkets/react-querybuilder/
-// Definitions by: Jake Boone <https://github.com/jakeboone02>
+// Type definitions for react-querybuilder-uxd 1.1.1
+// Project: https://github.com/bluecast-technologies/react-querybuilder-uxd/
 
 import * as React from 'react';
 

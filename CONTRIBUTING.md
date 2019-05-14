@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions to `react-querybuilder` are more than welcome. When doing so, please first discuss the change you wish to make via an issue. 
+Contributions to `react-querybuilder-uxd` are more than welcome. When doing so, please first discuss the change you wish to make via an issue. 
 
 - If adding a new feature, write the corresponding tests
 - Ensure that your work didn't break anything

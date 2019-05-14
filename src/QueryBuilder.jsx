@@ -188,6 +188,8 @@ export default class QueryBuilder extends React.Component {
   }
 
   getInitialQuery() {
+    // return this.props.query || this.createRuleGroup();
+
     const { query } = this.props;
     return (query && this.generateValidQuery(query)) || this.createRuleGroup();
 
@@ -202,7 +204,7 @@ export default class QueryBuilder extends React.Component {
 
   render() {
     const {
-      root: { id, rules, combinator },
+      root: { id, rules, combinator, groupName, isRuleGroupMinified },
       schema
     } = this.state;
     const { translations } = this.props;
@@ -216,6 +218,8 @@ export default class QueryBuilder extends React.Component {
           schema={schema}
           id={id}
           parentId={null}
+          groupName={groupName}
+          isRuleGroupMinified={isRuleGroupMinified}
         />
       </div>
     );
@@ -226,14 +230,14 @@ export default class QueryBuilder extends React.Component {
   }
 
   createRule() {
-    const { fields } = this.state.schema;
-    const field = fields[0].name;
+    const { fields, operators } = this.state.schema;
 
     return {
       id: `r-${uniqueId()}`,
-      field,
+      field: fields[0].name,
       value: '',
-      operator: this.getOperators(field)[0].name
+      operator: this.getOperators(fields[0].name),
+      isRuleMinified: false
     };
   }
 
@@ -241,7 +245,9 @@ export default class QueryBuilder extends React.Component {
     return {
       id: `g-${uniqueId()}`,
       rules: [],
-      combinator: this.props.combinators[0].name
+      combinator: this.props.combinators[0].name,
+      groupName: '',
+      isRuleGroupMinified: false
     };
   }
 

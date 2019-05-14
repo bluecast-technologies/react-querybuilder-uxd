@@ -1,12 +1,12 @@
 {
-  "name": "react-querybuilder",
-  "version": "1.4.3",
-  "description": "The React <QueryBuilder /> component for constructing queries",
+  "name": "react-querybuilder-uxd",
+  "version": "1.1.4",
+  "description": "The React <QueryBuilder /> component for constructing queries with improved user experience",
   "main": "dist/index.js",
   "types": "./index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sapientglobalmarkets/react-querybuilder"
+    "url": "https://github.com/bluecast-technologies/react-querybuilder-uxd.git"
   },
   "keywords": [
     "react",
@@ -18,9 +18,9 @@
     "clause",
     "expression"
   ],
-  "author": "Pavan Podila <pavan@pixelingene.com> (http://blog.pixelingene.com)",
+  "author": "Bluecast Technologies",
   "license": "MIT",
-  "homepage": "https://github.com/sapientglobalmarkets/react-querybuilder",
+  "homepage": "https://github.com/bluecast-technologies/react-querybuilder-uxd.git",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -61,10 +61,12 @@
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {
+    "file-loader": "^3.0.1",
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "url-loader": "^1.1.2",
     "uuid": "^3.0.1"
   },
   "peerDependencies": {
@@ -78,6 +80,6 @@
     "test": "karma start karma.conf.js",
     "test:watch": "npm test -- --no-single-run --auto-watch",
     "codecov": "cat coverage/*/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js",
-    "generate-changelog": "node node_modules/github-changes -o sapientglobalmarkets -r react-querybuilder -a --use-commit-body --only-pulls --date-format=\"(YYYY/MM/DD)\""
+    "generate-changelog": "node node_modules/github-changes -o bluecast-technologies -r react-querybuilder-uxd -a --use-commit-body --only-pulls --date-format=\"(YYYY/MM/DD)\""
   }
 }

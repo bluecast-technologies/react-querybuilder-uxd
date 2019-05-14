@@ -3,10 +3,186 @@
     margin-top: 0.5rem;
     margin-left: 0.5rem;
 }
-
 .ruleGroup {
+    // width: max-content;
     padding: 0.5rem;
     border: 1px solid #CCC;
     border-radius: 4px;
-    background: rgba(255, 233, 172, 0.5);
+    background: rgba(203, 224, 198, 0.5607843137254902);
+    .ruleGroup-combinators {
+        height: 24px;
+        border: none;
+        margin-right: 7px;
+        border-radius: 2px;
+        min-width: 94px;
+        padding: 4px 10px;
+    }
+    .ruleGroup-addRule,
+    .ruleGroup-addGroup {
+        background-color: #FFF;
+        border: 1px solid #F8F8F8;
+        border-radius: 2px;
+        color: #333333;
+        font-size: 12px;
+        height: 24px;
+        margin-right: 3px;
+        font-weight: 500;
+    }
+    .ruleGroup-remove,
+    .rule-remove {
+        color: #FF0000;
+        font-size: 18px;
+        height: 24px;
+        padding-bottom: 4px;
+        line-height: 0;
+        font-weight: 500;
+    }
+    .ruleGroup-remove {
+        background-color: #FFF;
+        border: 1px solid #F8F8F8;
+        border-radius: 2px;
+        margin-right: 3px;
+    }
+    .rule-group-confirm {
+        height: 24px;
+        width: 24px;
+        padding: 0;
+        font-weight: 500;
+        background-color: #FFFFFF;
+        border: 1px solid #F8F8F8;
+        border-radius: 2px;
+        vertical-align: bottom;
+        img {
+            width: 15px;
+        }
+    }
+    .rule-group-minified {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: max-content;
+        height: 24px;
+        padding: 5px 13px;
+        border-radius: 4px;
+        font-size: 12px;
+        background: #F6A34F;
+        color: #FFF;
+        font-weight: 500;
+        cursor: pointer;
+        &-field {
+            max-width: 28rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0;
+        }
+        .ruleGroup-remove {
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-radius: 0px;
+            margin-right: 3px;
+            color: #FFF;
+            padding: 0;
+            margin: 0;
+            margin-left: 8px;
+            padding-bottom: 3px;
+        }
+    }
+    .bg-darkGreen {
+        background-color: #598527;
+    }
+    .hideBgBorder {
+        border: none;
+        background-color: transparent;
+    }
+    .rule-group-children {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .group-name-input {
+        border: none;
+        height: 18px;
+        margin-right: 4px;
+        max-width: 185px;
+        padding: 3px 5px;
+        border-radius: 2px;
+    }
+    // Rule
+    .rule {
+        .rule-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 4px;
+            border-radius: 3px;
+        }
+        .rule-fields,
+        .rule-operators,
+        input {
+            height: 24px;
+            background: #EEEEEE;
+            border: 1px solid #EEEEEE;
+            font-size: 12px;
+            min-width: 120px;
+            /* color: #3FAFE0; */
+            border-radius: 15px;
+            padding: 0px 8px;
+            margin-right: 4px;
+        }
+        .rule-remove {
+            background-color: #EEEEEE;
+            border: 1px solid #EEEEEE;
+            border-radius: 50%;
+            margin-right: 4px;
+        }
+        .rule-confirm {
+            height: 24px;
+            width: 24px;
+            padding: 0;
+            line-height: 0;
+            font-weight: 500;
+            background-color: #EEEEEE;
+            border: 1px solid #EEEEEE;
+            border-radius: 50%;
+            img {
+                width: 15px;
+            }
+        }
+        .rule-minified {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: max-content;
+            height: 24px;
+            padding: 5px 13px;
+            border-radius: 15px;
+            font-size: 12px;
+            background: #FFF;
+            cursor: pointer;
+            &-field {
+                color: #0091D9;
+                text-transform: capitalize;
+                margin-right: 3px;
+            }
+            &-operator {
+                margin-right: 3px;
+            }
+            &-value {
+                font-weight: 500;
+                margin-right: 5px;
+                max-width: 24rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .rule-remove {
+                background-color: #FFF;
+                border: #FFF;
+                margin: 0;
+                padding: 0;
+                font-size: 15px;
+                margin-left: 3px;
+                padding-bottom: 3px;
+            }
+        }
+    }
 }

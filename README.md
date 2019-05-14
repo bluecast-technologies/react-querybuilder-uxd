@@ -1,8 +1,7 @@
 # react-querybuilder
 
-[![npm](https://img.shields.io/npm/v/react-querybuilder.svg?maxAge=2592000)](https://www.npmjs.com/package/react-querybuilder)
-[![Build Status](https://travis-ci.org/sapientglobalmarkets/react-querybuilder.svg?branch=master)](https://travis-ci.org/sapientglobalmarkets/react-querybuilder)
-[![codecov.io](https://codecov.io/github/sapientglobalmarkets/react-querybuilder/coverage.svg?branch=master)](https://codecov.io/github/sapientglobalmarkets/react-querybuilder?branch=master)
+[![npm](https://img.shields.io/npm/v/react-querybuilder-uxd.svg?maxAge=2592000)](https://www.npmjs.com/package/react-querybuilder-uxd)
+
 
 ## Credits
 
@@ -10,18 +9,19 @@ This component was inspired by prior work from:
 
 - [jQuery QueryBuilder](http://querybuilder.js.org/)
 - [Angular QueryBuilder](https://github.com/mfauveau/angular-query-builder)
+- [React QueryBuilder](https://github.com/sapientglobalmarkets/react-querybuilder)
 
 ## Getting Started
 
 ![Screenshot](_assets/screenshot.png)
 
 ```shell
-npm install react-querybuilder --save
+npm install react-querybuilder-uxd --save
 ```
 
 ## Demo
 
-To run a demo of the react-querybuilder being used, go through the following steps.
+To run a demo of the react-querybuilder-uxd being used, go through the following steps.
 
 - `npm install` _Install npm packages_
 - `npm start` _Run a local server_
@@ -29,12 +29,15 @@ To run a demo of the react-querybuilder being used, go through the following ste
 
 OR
 
-[See live Demo](https://sapientglobalmarkets.github.io/react-querybuilder/).
+[See live Demo](https://bluecast-technologies.github.io/react-querybuilder-uxd/).
 
 ## Usage
 
 ```jsx
-import QueryBuilder from "react-querybuilder";
+import QueryBuilder from "react-querybuilder-uxd";
+
+//import style
+import "react-querybuilder-uxd/dist/query-builder.scss";
 
 const fields = [
   { name: "firstName", label: "First Name" },
@@ -313,7 +316,7 @@ This can be used to override translatable texts applied to various controls that
 }
 ```
 
-## Development
+<!-- ## Development
 
 ### Changelog Generation
 
@@ -325,4 +328,4 @@ To use it:
 1. run `npm run generate-changelog`
 1. enter your github credentials at the prompt
 1. commit
-1. push your commit and tags
+1. push your commit and tags -->
